@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: checkoutservice-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: checkoutservice
+  template:
+    metadata:
+      labels:
+        app: checkoutservice
+    spec:
+      containers:
+      - name: checkoutservice
+        image: pavankumarsangisetti/checkoutservice:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
