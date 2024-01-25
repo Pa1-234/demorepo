@@ -3,7 +3,7 @@ FROM mysql:latest
 
 # Set the environment variables for MySQL
 ENV MYSQL_DATABASE=template \
-    MYSQL_ROOT_PASSWORD=root \
+    MYSQL_ROOT_PASSWORD=root123 \
     MYSQL_PASSWORD=root123
 
 # Expose port 3306 to allow external connections
