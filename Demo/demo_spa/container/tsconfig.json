@@ -1,0 +1,10 @@
+{
+  "extends": "ts-config-single-spa",
+  "files": ["src/sonata-root-config.js"],
+  "compilerOptions": {
+    "declarationDir": "dist",
+    "allowJs": true,
+  },
+  "include": ["src/**/*"],
+  "exclude": ["src/**/*.test*"]
+}
